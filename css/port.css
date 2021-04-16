@@ -1,0 +1,146 @@
+/* Css Code */
+
+/* body{
+    background: linear-gradient(to right,blue 80%,white 20%); 
+    font-family:'Jim Nightshade', sans-serif;
+}  */
+
+body{
+    background-color: white;
+}    
+.bg1{
+    background-color:   #ffffff;
+    box-shadow: 10px 10px 5px grey;
+    width: 98%;
+    height: 700px;
+    top: 0;
+    left: 0;
+}
+.bg2{
+    background-color: #3385ff;
+    box-shadow: 10px 10px 5px grey;
+    width: 80%;
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+nav{
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: left;
+    min-height: 8vh;
+    align-items: right;
+    justify-content: space-around;
+    font-family: 'Gotu', sans-serif;
+}
+.logo{
+    text-shadow: grey;
+    color: white;
+    letter-spacing: 5px;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+}
+.nav-links{
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.nav-links .main{
+    display: flex;
+    float:left;
+    margin: 0;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.nav-links .main li{
+    list-style: none;
+    display: flex;
+    float: left;
+
+}
+.nav-links .main a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    display: block;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 20px;
+}
+.nav-links a.active,
+.nav-links a:hover{
+    /* text-underline-position: below; */
+    cursor: pointer;
+}
+.nav-links .cont{
+    display: flex;
+    float: right;
+    padding-left: 20px;
+    overflow: hidden;
+
+}
+.nav-links .cont li{
+    list-style: none;
+    display: flex;
+    float: right;
+}
+.nav-links .cont a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 4px;
+    display: block;
+    box-sizing: content-box;
+    border-width: medium;
+    border-color: #3385ff;
+    border-style: solid;
+    font-size: 20px;
+}
+.do{
+    overflow: hidden;
+    align-content: center;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.por{
+    text-align: justify;
+}
+.por h2{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.por p{
+    font-family: 'Gotu', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+.por p a{
+    text-decoration: none;
+    box-sizing: content-box;
+    border-color: white;
+    text-transform: uppercase;
+    border-width: medium;
+    border-style: solid;
+    color: white;
+    font-size:15px;
+}
+.port{
+    
+}
+.port img{
+    width:450px;
+    height:300px;
+    float: right;
+    padding-left: 100px;
+    box-shadow: 5px 0px 0.5px grey;
+}
+button{
+    border: blue;
+    border-width: thin;
+}
