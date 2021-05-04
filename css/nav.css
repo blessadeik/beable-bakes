@@ -13,6 +13,7 @@ header{
     z-index: 2;
     width: 100%;
     height: 60px;
+    background-color: floralwhite;
 }
 
 .header2{
@@ -260,9 +261,17 @@ header a{
 }
 
 .cont{
-    margin: auto;
     text-align: center;
     overflow: hidden;
+}
+.cont h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.cont p{
+    font-size:1.3rem;
+
 }
 
 .grid{
@@ -273,17 +282,36 @@ header a{
 }
 
 .span-grid{
-    grid-column:span 2;
-    grid-row: span 2;
+    grid-column:span 2/3;
+    grid-row: span 2/3;
+    
 }
 
 .wel-sect{
+    background-color: #fff;
     box-shadow:0 3px 10px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    height: 200px;
+    width: 1/3fr;
+    height: 1/3fr;
+    padding: 5px;
 
 }
 
+.btn-sect{
+    width: fit-content;
+    padding: 8px;
+    background-color: #e84545;
+    color: #fff;
+    font-weight: bold;
+    border-radius:10px;
+    cursor: pointer;    
+    object-position: bottom;
+    /* align-self: flex-end; */
+}
+
+.btn-sect:hover{
+    transform: scale(1.1);
+    background-color: #f02d2d;
+}
 .wel-sect img{
     width: 100%;
     height: 100%;
