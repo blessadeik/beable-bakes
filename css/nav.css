@@ -11,10 +11,7 @@
     font-family:'Itim', cursive;
     /* box-sizing: border-box; */
 }
-body{
-    background-color: "";
-    top: 0;
-}
+
 .main{
     background-image: url('/images/wel8.png');
     background-position:center;
