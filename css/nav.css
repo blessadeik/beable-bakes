@@ -1,7 +1,7 @@
 /* Beable Bakes CSS */
 
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DancingScript&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 *{
     margin: 0;
@@ -9,7 +9,6 @@
     font-family:'Gotu', sans-serif;
     box-sizing: border-box;
 }
-
 body{
     background-image: url('/images/wel8.jpg');
     background-position:center;
@@ -28,7 +27,6 @@ body{
     justify-content: center;
 
 }
-
 .header2{
     position: fixed;
     top: 0;
@@ -37,22 +35,19 @@ body{
     height: 55px;
     background: rgba(241, 235, 235, 0.904);
 }
-
-
 .header a{
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
 }
-
 #logo{
+    font-family: 'Itim', cursive;
     margin-left: 40px;
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
     font-size: 1.2rem;
 }
-
 #logo-s{
     color: peachpuff;
     margin-left: 6px;
@@ -60,27 +55,22 @@ body{
 #logo a{
     text-decoration: none;
 }
-
 #logo-s:hover{
     color: floralwhite;
 }
-
 #logo:hover{
     color: peachpuff;
 }       
-
 .nav{
     float: right;
     margin-right: 20px;
     font-size: 0.6rem;
 }
-
 .act{
     border: 1px solid peachpuff; 
     border-radius: 50px;
     padding: 6px 15px;
 }
-
 .nav:hover{
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -93,12 +83,9 @@ body{
     color: peachpuff;
     cursor: pointer;
 }
-
 .nav a.search-icon:hover{
     color:floralwhite;
 }
-
-
 /*Search Bar*/
 .full-width{
     width: 100%;
@@ -143,7 +130,6 @@ body{
     right: 0;
     cursor: pointer;
 }
-
 /* burger pane */
 .burger{
     display: none;
@@ -156,13 +142,11 @@ body{
     background-color: rgb(128, 128, 93);
     transition: all 0.3s ease;
 }
-
 @media screen and (max-width:1024px){
     .nav-links{
         width: 80%;
     }
 }
-
 @media screen and (max-width:350px){
     body{
         overflow-x: hidden;
@@ -188,11 +172,9 @@ body{
         display: block;
     }
 }
-
 .nav-active{
     transform: translateX(0%);
 }
-
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -213,10 +195,6 @@ body{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, 6px);
 }
-/*carousel*/
-
-
-
 /*body*/
 
 .sec-body{
@@ -227,17 +205,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .sect{
-    padding-top:40vh;
+    padding-top:45vh;
     margin: auto;
     justify-content:center;
 }
-
 .mt{
     margin-top: 0px;
 }
-
 .fresh{
     text-align: center;
     font-size: 2.6rem;
@@ -256,7 +231,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .dis{
     margin: auto;
     text-align: center;
@@ -271,7 +245,6 @@ body{
     background-attachment: fixed;
 
 }
-
 .cont{
     text-align: center;
     overflow: hidden;
@@ -280,12 +253,10 @@ body{
     font-weight: bold;
     font-size: 2em;
 }
-
 .cont p{
     font-size:1.3rem;
 
 }
-
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -298,7 +269,6 @@ body{
     grid-row: span 2/3;
     
 }
-
 .wel-sect{
     background-color: #fff;
     box-shadow:0 3px 10px rgba(0, 0, 0, 0.2);
@@ -307,7 +277,6 @@ body{
     padding: 5px;
 
 }
-
 .btn-sect{
     width: fit-content;
     padding: 12px;
@@ -323,7 +292,6 @@ body{
     font-weight: bold;
     text-decoration:none;
 }
-
 .btn-sect:hover{
     transform: scale(1.1);
     background-color: #f02d2d;
@@ -341,11 +309,9 @@ body{
     padding-bottom: 1rem;
     max-width: 100%;
 }
-
 .peek{
     align-items:center; 
 }
-
 .peek b{
     margin: auto;
     color: #810000; 
@@ -370,7 +336,6 @@ body{
     display: inline-block;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);    ;
 }
-
 .snack-profile .box .imgBox{
     margin: auto;
     display: block;
@@ -381,12 +346,9 @@ body{
     height: 150px;
     transition: transform 3s;
 }
-
-
 .snack-profile .box:hover .imgBox {
     transform: scale(1.08);
 }
-
 .snack-profile .box .contents{
     position: absolute;
     top: 6px;
@@ -400,12 +362,10 @@ body{
     visibility: hidden;
     overflow: hidden;
 }
-
 .snack-profile .box:hover .contents{
     visibility: visible;
     transform: scaleY(1.05);
 }
-
 .snack-profile .box:hover .contents .detail{
     position: relative;
     top: 0;
@@ -414,17 +374,14 @@ body{
     text-align:center;
     padding: 15px;
 }
-
 .snack-profile .box .contents .detail h2{
     color: sienna;
     font-size: 0.2rem;
 }
-
 .snack-profile .box .contents .detail p{
     font-size: 0.1rem;
     color-interpolation-filters: linearRGB;
 }
-
 .snack-name{
     margin: auto;
     color: #810000;
@@ -432,7 +389,6 @@ body{
     text-align: center;
     font-weight: bold;
 }
-
 /*  */
 
 .res{
@@ -450,28 +406,16 @@ body{
     width: 1/2fr;
     height: 1/2fr;
 }
-
 .res-grid{
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 5px;
 }
-
 .cont-grid{
     display:grid;
     grid-template-rows: repeat (2, 1fr);
     gap: 2px;
 }
-
-.cont-grid img{
-
-}
-
-
-.cont-div{
-
-}
-
 .tab{
     margin: auto;
     overflow:hidden;
@@ -479,7 +423,6 @@ body{
     justify-content: center;
     align-items:center;
 }
-
 .tab .bat{
     margin:auto;
     overflow: hidden;
@@ -489,13 +432,11 @@ body{
     font-size: 60px;
 
 }
-
 .tab .bat p{
     color: black;
     font-size: 1.5rem;
     padding-bottom: 25px;
 }
-
 .tab button{
     margin: auto;
     align-items: center;
@@ -510,7 +451,6 @@ body{
     text-decoration: none;
     color:pink;
 }
-
 .des{
     margin: auto;
     width: 100%;
@@ -525,7 +465,6 @@ body{
     width: 75%;
     justify-content: center;
 }
-
 .des .sed .seed{
     text-align: center;
     width: 100%;
@@ -567,9 +506,6 @@ hr{
     padding-bottom: 1%;
 }
 
-
-
-
 /* oops */
 
 .oops{
@@ -577,7 +513,6 @@ hr{
     width:100%;
     align-items:center;
 }
-
 .oops .non{
     position:relative;
     margin:auto;
@@ -597,21 +532,17 @@ hr{
 }
 
 /* Service Page */
-
 .sec-service{
     margin: auto;
     width: 100%;
-    background-color: floralwhite;
     background-size: cover;
 }
-
 .service-1{
     margin: auto;
     width: 70%;
     padding-top: 25%;
     padding-bottom: 25%;
 }
-
 .service-1 h2{
     font-weight: bold;
     text-align: center;
@@ -624,7 +555,6 @@ hr{
     text-align: center;
     font-size: 1.2rem;
 }
-
 .service-1 button{
     margin: auto;
     align-items: center;
@@ -635,13 +565,11 @@ hr{
     padding: 8px;
     max-width: fit-content;
 }
-
 .service-1 button a{
     text-decoration: none;
     color: floralwhite;
     font-weight: bold;
 }
-
 /* About Page */
 
 .sec-about{
@@ -651,7 +579,6 @@ hr{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .about-1{
     margin: auto;
     width: 60%;
@@ -659,17 +586,14 @@ hr{
     padding-bottom:30%;
     text-align: center;
 }
-
 .about-1 h1{
     font-size: 1.8rem;
     color: #810000;
     font-weight: bold;
 }
-
 .about-1 p{
     font-size: 1rem;
 }
-
 .about-2{
     margin: auto;
     width: 70%;
@@ -680,22 +604,18 @@ hr{
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
-
 .about-detail{
     width: fit-content;
     background-color: white;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     margin-bottom: 15px;
 }
-
 .about-detail h3{
     text-align: center;
     padding-top: 3%;
     font-weight: bold;
     font-size: 1.4rem;
 }
-
 .about-detail p{
     margin: auto;
     width: 70%;
@@ -704,7 +624,6 @@ hr{
     padding-bottom: 5%;
     font-size: 0.75rem;
 }
-
 /* Shop */
 
 .sec-shop{
@@ -712,21 +631,18 @@ hr{
     width: 100%;
     background-image: url('../images/b10.jpg');
 }
-
 .shop-1{
     margin: auto;
     width: 60%;
     padding-top:20%;
     padding-bottom: 20%;
 }
-
 .shop-1a{
     margin: auto;
     padding: 10%;
     background: rgba(241, 235, 235, 0.904);
     color: #810000;
 }
-
 .shop-1a p{
     text-align: center;
     font-size: 1.2rem;
@@ -741,15 +657,13 @@ hr{
     font-weight: bold;
     /* padding: 20px 10px; */
 }
-
 .pastry{
     color: #ffffff;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size:1em;
+    line-height:8vh;
+    font-size:1.5em;
 }
-
-
 .shopclick{
     margin: auto;
     border-right: 4px solid rgb(144, 95, 5);
@@ -762,5 +676,10 @@ hr{
     color: #ffffff;
     font-weight: bold;
     padding: 5px;
+    line-height:8vh;
     font-family: 'Itim', cursive;
+}
+i{
+    width:25px;
+    
 }
