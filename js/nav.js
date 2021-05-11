@@ -6,10 +6,10 @@ const navSlide = () => {
     
     burger.addEventListener('click', () => {
         //Toggle
-        togHeader.classList.toggle('one-header');
+        togHeader.classList.toggle('.one-header');
 
         //Animate links
-        navLinks.forEach((nav, index)=> {
+        nav.forEach((nav, index)=> {
         if(nav.style.animation){
             nav.style.animation=''
         }else{
@@ -30,14 +30,14 @@ navSlide();
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll= $(window).scrollTop();
-        if(scroll >150){
-            $('header').css("background", "rgba(0, 0, 0, 0.904)");
-            $('.nav a.search-icon').css("color", "#810000");
-            $('.act').css("border", "solid 1px #810000");
+        if(scroll >100){
+            $('.header').css("background", "rgba(0, 0, 0, 0.7)");
+            $('.nav a.search-icon').css("color", "peachpuff");
+            $('.act').css("border", "solid 1px peachpuff");
             $('#logo').css("font-size", "1.5rem");
             $('.nav').css("font-size", "0.85rem");
         }else{
-            $('header').css("background", "transparent");
+            $('header').css("background", "");
             $('.nav a.search-icon').css("color", "peachpuff");
             $('.act').css("border", "solid 1px peachpuff");
             $('#logo').css("font-size", "1.2rem");
