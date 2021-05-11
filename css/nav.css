@@ -1,4 +1,8 @@
 /* Beable Bakes CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DancingScript&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +10,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('/images/wel8.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100vh;
+}
 /*Navigation*/
 .header{
     position: fixed;
@@ -13,7 +24,6 @@
     z-index: 2;
     width: 100%;
     height: fit-content;
-    background-color: #000000;
     padding: 10px 5px;
     justify-content: center;
 
@@ -219,10 +229,9 @@
 }
 
 .sect{
+    padding-top:40vh;
     margin: auto;
-    width: 100%;
-    background-color: floralwhite;
-    background-size: cover;
+    justify-content:center;
 }
 
 .mt{
@@ -243,9 +252,8 @@
 
 }
 .wel{
-    /* margin:auto; */
     overflow:hidden;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -428,13 +436,12 @@
 /*  */
 
 .res{
+    top:0;
     text-align: center;
     font-size: 1.6rem;
-    padding-top:20%;
-    padding-bottom: 20%;
     width: 100%;
+    height:100vh;
     overflow:hidden;
-    /* background-image: url('../images/b10.jpg'); */
     background-repeat: no-repeat;
 }
 .res .content{
@@ -446,7 +453,7 @@
 
 .res-grid{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
     gap: 5px;
 }
 
@@ -468,9 +475,8 @@
 .tab{
     margin: auto;
     overflow:hidden;
-    padding-bottom: 35%;  
     width:70%;
-    padding-top:35%; 
+    justify-content: center;
     align-items:center;
 }
 
@@ -550,16 +556,15 @@ hr{
     align-content: center;
     color: black;
 }
-
-footer{
+.footer{
     margin: auto;
-    position: static;
-    text-align:center;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
     font-size: 0.75rem;
     color: floralwhite;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: #1e212d;
 }
 
 
@@ -726,10 +731,28 @@ footer{
     text-align: center;
     font-size: 1.2rem;
 }
+.landing{
+    font-family: 'Itim', cursive;
+    margin: auto;
+    text-align: center;
+    color: peachpuff;
+    font-size:4em;
+    line-height:8vh;
+    font-weight: bold;
+    /* padding: 20px 10px; */
+}
+
+.pastry{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size:1em;
+}
+
 
 .shopclick{
     margin: auto;
-    border: 1.5px solid #ffffff;
+    border-right: 4px solid rgb(144, 95, 5);
     text-align: center;
     width: fit-content;
     padding: 3px 3px;
@@ -737,13 +760,7 @@ footer{
 .shopclick a{
     text-decoration: none;
     color: #ffffff;
-}
-.landing{
-    margin: auto;
-    text-align: center;
-    color: #ffffff;
-    font-size:2em;
-    line-height:3vh;
     font-weight: bold;
-    padding: 20px 10px;
+    padding: 5px;
+    font-family: 'Itim', cursive;
 }
