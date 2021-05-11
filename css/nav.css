@@ -11,15 +11,18 @@
     font-family:'Merienda', cursive;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 .main{
-    background-image: url('/images/wel8.jpg');
+    background-image: url('/images/wel8.png');
     background-position:center;
     background-size: cover;
     background-repeat:no-repeat;
     height:100vh;
 }
 .main2{
-    background-image: url('/images/wel8.jpg');
+    background-image: url('/images/wel8.png');
     background-position:center;
     background-size: cover;
     background-repeat:no-repeat;
