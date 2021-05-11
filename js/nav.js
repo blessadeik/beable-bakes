@@ -31,7 +31,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll= $(window).scrollTop();
         if(scroll >150){
-            $('header').css("background", "rgba(241, 235, 235, 0.904)");
+            $('header').css("background", "rgba(0, 0, 0, 0.904)");
             $('.nav a.search-icon').css("color", "#810000");
             $('.act').css("border", "solid 1px #810000");
             $('#logo').css("font-size", "1.5rem");

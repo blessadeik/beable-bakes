@@ -2,19 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meriendat&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
-    font-family:'Gotu', sans-serif;
+    font-family:'Merienda', cursive;
     box-sizing: border-box;
 }
-body{
+.main{
     background-image: url('/images/wel8.jpg');
     background-position:center;
     background-size: cover;
     background-repeat:no-repeat;
     height:100vh;
+}
+.main2{
+    background-image: url('/images/wel8.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:80vh;
 }
 /*Navigation*/
 .header{
@@ -207,6 +216,12 @@ body{
 }
 .sect{
     padding-top:45vh;
+    margin: auto;
+    justify-content:center;
+}
+
+.sect2{
+    padding-top:30vh;
     margin: auto;
     justify-content:center;
 }
@@ -454,8 +469,9 @@ body{
 .des{
     margin: auto;
     width: 100%;
-    background-color: #1e212d; 
+    background-color: #000000; 
     padding: 15px;
+    padding-bottom: 20px;
 }
 .des .sed{
     margin: auto;
@@ -500,10 +516,21 @@ hr{
     bottom: 0;
     position: fixed;
     text-align: center;
+    justify-content: center;
     font-size: 0.75rem;
     color: floralwhite;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+.footer2{
+    margin: auto;
+    text-align: center;
+    font-size: 0.75rem;
+    color: floralwhite;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #000000; 
 }
 
 /* oops */
@@ -516,18 +543,17 @@ hr{
 .oops .non{
     position:relative;
     margin:auto;
-    padding-top:35%; 
-    padding-bottom: 25%;  
+    padding-top: 40vh; 
     width:70%;
 }
 .oops .non h1{
     color: sienna;
-    font-size: 60px;
+    font-size: 3em;
 }
 
 .oops .non h4{
-    color: black;
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1.2rem;
     padding-bottom: 25px;
 }
 
@@ -539,16 +565,14 @@ hr{
 }
 .service-1{
     margin: auto;
-    width: 70%;
-    padding-top: 25%;
-    padding-bottom: 25%;
+    width: 90%;
 }
 .service-1 h2{
     font-weight: bold;
     text-align: center;
-    padding-bottom:10%;
+    padding:20px;
     color: #810000;
-    font-size: 1.6rem;
+    font-size: 2em;
 }
 
 .service-1 p{
@@ -557,28 +581,27 @@ hr{
 }
 .service-1 button{
     margin: auto;
-    align-items: center;
-    background-color: rgb(70, 37, 37);
     border: none;
-    border-radius: 50px;
+    border-right: 3px solid ;
     font-size: 0.9rem;
     padding: 8px;
     max-width: fit-content;
 }
 .service-1 button a{
     text-decoration: none;
-    color: floralwhite;
+    color: rgb(70, 37, 37);
     font-weight: bold;
+    text-align: center;
 }
 /* About Page */
 
-.sec-about{
+/* .sec-about{
     margin: auto;
     width: 100%;
     background-image: url('../images/b10.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 .about-1{
     margin: auto;
     width: 60%;
@@ -596,13 +619,13 @@ hr{
 }
 .about-2{
     margin: auto;
+    margin-top:20vh;
     width: 70%;
-    padding-top: 15%;
     padding-bottom: 15%;
     align-content: center;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
 }
 .about-detail{
     width: fit-content;
@@ -655,7 +678,6 @@ hr{
     font-size:4em;
     line-height:8vh;
     font-weight: bold;
-    /* padding: 20px 10px; */
 }
 .pastry{
     color: #ffffff;
@@ -663,6 +685,17 @@ hr{
     font-family: 'Dancing Script', cursive;
     line-height:8vh;
     font-size:1.5em;
+}
+.pastry2{
+    margin: auto;
+    color: #ffffff;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    padding-top:20px;
+    font-weight: lighter;
+    width: 80%;
+    font-size:0.75rem;
 }
 .shopclick{
     margin: auto;
@@ -682,4 +715,42 @@ hr{
 i{
     width:25px;
     
+}
+.badges{
+    height:20vh;
+    margin: auto;
+    justify-content:center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+.grid-3{
+    grid-template-columns:repeat(3, 1fr);
+}
+.shad{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    margin: auto;
+    width: 80%;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.orderclick{
+    margin: auto;
+    border-right: 4px solid rgb(144, 95, 5);
+    text-align: center;
+    width: fit-content;
+    padding: 3px 3px;
+}
+.orderclick a{
+    text-decoration: none;
+    color: rgb(70, 37, 37);
+    font-weight: bold;
+    padding-top: 10px;
+    line-height:8vh;
+    font-family: 'Itim', cursive;
 }
