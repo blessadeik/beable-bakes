@@ -160,7 +160,9 @@
     background-color: peachpuff;
     transition: all 0.3s ease;
 }
-
+.active .nav{
+    display:block;
+}
 @media screen and (max-width:580px){
     body{
         overflow-x: hidden;
@@ -171,19 +173,18 @@
         top: 0;
         height: 50vh;
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
+        grid-template-columns:1fr;
         align-items: center;
         width: 20%;
         transform: translateX(100%);
-        transition:transform 0.5s ease-in;
+        transition:transform 0.9s ease-out;
         background-color: rgba(0, 0, 0, 0.9);
     }
    
-    .nav li{
-        opacity: 1;
+    .nav a{
+        display:block;
+        padding:10px 35px;
         visibility: visible;
-        float: right;
     }
     .burger{
         right: 0;
@@ -527,11 +528,11 @@ hr{
     color: black;
 }
 .footer{
-    margin:auto;
+    left:0;
     bottom: 0;
+    width:100%;
     position: fixed;
     text-align: center;
-    justify-content: center;
     font-size: 0.75rem;
     color: floralwhite;
     padding-top: 1%;

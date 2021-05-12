@@ -1,11 +1,15 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const togHeader = document.querySelector('.one-header');
-    
-    
+  
+
     burger.addEventListener('click', () => {
         //Toggle
-        togHeader.classList.toggle('.one-header');
+        // togHeader.classList.toggle('.one-header');
+        if (burger.classList.toggle('toggle')){
+            $('.one-header').css("visibility", "visible");
+        };
+
 
         //Animate links
         // nav.forEach((nav, index)=> {
@@ -16,7 +20,6 @@ const navSlide = () => {
         // }
         // });
         // burger animation
-        burger.classList.toggle('toggle');
     
     });
 }
