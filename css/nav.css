@@ -40,6 +40,7 @@
 
 }
 .one-header{
+    display:flex-end;
     color: #ffffff;
 }
 .header2{
@@ -147,6 +148,7 @@
     cursor: pointer;
 }
 /* burger pane */
+
 .burger{
     display: none;
     cursor: pointer;
@@ -177,21 +179,25 @@
         transition:transform 0.5s ease-in;
         background-color: rgba(0, 0, 0, 0.9);
     }
+   
     .nav li{
         opacity: 1;
         visibility: visible;
         float: right;
     }
     .burger{
-        top: 0;
         right: 0;
-        display: block;
+        position:absolute;
+        display:initial;
+        align-self:flex-end;
+        cursor:pointer;
+       
     }
 }
 .nav-active{
     transform: translateX(0%);
 }
-@keyframes navLinkFade{
+@keyframes navfade{
     from{
         opacity: 0;
         transform: translateX(50px);
@@ -202,14 +208,14 @@
     }
 }
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-7px, 4px);
 
 }
 .toggle .line2{
-    opacity: 0;
+    transform: rotate(45deg) translate(0px, 4px);
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px, 6px);
+    opacity: 0;
 }
 /*body*/
 
@@ -521,7 +527,7 @@ hr{
     color: black;
 }
 .footer{
-    margin: auto;
+    margin:auto;
     bottom: 0;
     position: fixed;
     text-align: center;
@@ -688,14 +694,12 @@ hr{
     text-align: center;
     color: peachpuff;
     font-size:2.8em;
-    line-height:8vh;
     font-weight: bold;
 }
 .pastry{
     color: #ffffff;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    line-height:8vh;
     font-size:1.5em;
 }
 .pastry2{

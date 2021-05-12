@@ -1,7 +1,6 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const togHeader = document.querySelector('.one-header');
-    const navLinks = document.querySelectorAll('.nav');
     
     
     burger.addEventListener('click', () => {
@@ -9,19 +8,17 @@ const navSlide = () => {
         togHeader.classList.toggle('.one-header');
 
         //Animate links
-        nav.forEach((nav, index)=> {
-        if(nav.style.animation){
-            nav.style.animation=''
-        }else{
-            nav.style.animation= 'navLinkFade 0.5s ease forwards $(index / 7+1.5)s';
-        }
-        });
-        //burger animation
+        // nav.forEach((nav, index)=> {
+        // if(nav.style.animation){
+        //     nav.style.animation=''
+        // }else{
+        //     nav.style.animation= 'navfade 0.5s ease forwards $(index / 7+1.5)s';
+        // }
+        // });
+        // burger animation
         burger.classList.toggle('toggle');
     
     });
-
-
 }
 
 navSlide();
@@ -45,4 +42,5 @@ $(document).ready(function(){
         }
     });
 
-})
+});
+
