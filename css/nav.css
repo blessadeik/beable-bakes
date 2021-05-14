@@ -665,11 +665,57 @@ hr{
 }
 
 /* Shop */
+/* slides */
+.slide-container{
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+}
+.showSlide{
+    height: 70vh;
+    display: none;
+    overflow: hidden;
+}
+.caption{
+    position: absolute;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left:15% ;
+    -webkit-animation-name:post;
+    -webkit-animation-duration: 2s;
+    animation-name:post;
+    animation-duration: 2s;
+    z-index: 1;
+
+}
+@-webkit-keyframes post{
+    from {left: 35%;}
+    to {left: 15%;}
+}
+
+@keyframes post{
+    from {left: 35%;}
+    to {left: 15%;}
+}
+
+.caption h1{
+    color: peachpuff ;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.caption p{
+    font-weight: bold;
+    font-size: 1rem;
+}
 
 .sec-shop{
     margin: auto;
     width: 100%;
-    background-image: url('../images/b10.jpg');
+    /* background-image: url('../images/wel8.jpg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
