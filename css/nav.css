@@ -366,31 +366,24 @@ body{
 }
 .snack-profile{
     margin: auto;
+    width: 80%;
     display: grid;
-    width: 70%;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     padding-top: 1rem;
 }
 .snack-profile .box{
     position: relative;
-    width:150px;
-    height:150px;
     background: peachpuff;
     margin: 5px;
+    height: 150px;
     box-sizing: border-box;
-    display: inline-block;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);    ;
 }
 .snack-profile .box .imgBox{
     margin: auto;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
-    max-width: 150px;
-    height: 150px;
     transition: transform 3s;
 }
 .snack-profile .box:hover .imgBox {
@@ -761,7 +754,7 @@ hr{
     height:5px;
     border:2px solid #fff;
     border-radius:50%;
-    margin:0 10px;
+    margin:0 5px;
     cursor:pointer;
     background-color:none;
 }
@@ -910,6 +903,11 @@ i{
 }
 
 /* @media Queries */
+@media screen and (max-width:700px){
+    .snack-profile{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 @media screen and (max-width:580px){
 
     .sect{
@@ -931,5 +929,17 @@ i{
     .des .sed{
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 
+    }
+    .snack-profile{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:30px;
+
+    }
+}
+
+@media screen and (max-width:300px){
+    .snack-profile{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
