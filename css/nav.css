@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+}
+
 .main{
     background-image: url('../images/wel8.jpg');
     background-position:center;
@@ -194,6 +198,18 @@
         cursor:pointer;
        
     }
+    .caption h1{
+        font-size: 30px;
+
+    }
+
+    .caption p{
+        font-size: 8px;
+    }
+    
+    .prev, .next{
+        top: 60%;
+    }
 }
 .nav-active{
     transform: translateX(0%);
@@ -341,7 +357,7 @@
     max-width: 100%;
 }
 .peek{
-    align-items:center; 
+    text-align: center;
 }
 .peek b{
     margin: auto;
@@ -493,8 +509,8 @@
     margin: auto;
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 75%;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    width: 80%;
     justify-content: center;
 }
 .des .sed .seed{
@@ -670,6 +686,7 @@ hr{
     position: relative;
     width: 100%;
     background-color: #000000;
+
 }
 .showSlide{
     height: 70vh;
@@ -680,7 +697,7 @@ hr{
     position: absolute;
     color: #fff;
     letter-spacing: 2px;
-    line-height: 35px;
+    width:80%;
     top: 40%;
     left:15% ;
     -webkit-animation-name:post;
@@ -711,7 +728,74 @@ hr{
     font-weight: bold;
     font-size: 1rem;
 }
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color:#edeef7;
+    transition: 0.1s;
+    user-select: none;
+}
 
+.prev:hover, .next:hover{
+    color: peachpuff;
+}
+
+
+.next{
+    right:0;
+}
+.dotsbox{
+    position:absolute ;
+    left: 50%;
+    transform: translate(-50%);
+    bottom:20px;
+    cursor: pointer;
+}
+.dot{
+    display:inline-block;
+    width:5px;
+    height:5px;
+    border:2px solid #fff;
+    border-radius:50%;
+    margin:0 10px;
+    cursor:pointer;
+    background-color:none;
+}
+
+.active, .dot:hover{
+    border-color: peachpuff;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: 0.8;}
+    to {opacity: 1;}
+}
+@keyframes fade{
+    from {opacity: 0.8;}
+    to {opacity: 1;}
+}
+
+.hot{
+    margin:auto;
+    background-color:peachpuff;
+    padding:10px;
+    width:100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.deals h2{
+    color:#810000;
+    text-align:center;
+}
 .sec-shop{
     margin: auto;
     width: 100%;
@@ -843,5 +927,9 @@ i{
     }
     .service-1 p{
         font-size:1rem;
+    }
+    .des .sed{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+
     }
 }

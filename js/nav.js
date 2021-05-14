@@ -47,3 +47,55 @@ $(document).ready(function(){
 
 });
 
+// banner slide
+
+// const showSlid = document.querySelectorAll('.showSlide');
+// const dot = document.querySelectorAll('.dot');
+
+// slidLength = showSlid.length;
+
+// let counter =0;
+
+// let timer = setInterval(autoslide, 3000);
+
+// function autoslide() {
+//     if (counter == slidLength ) {
+//         counter = 0;
+//     }
+//     plusSlides();
+// }
+
+// function plusSlides() {
+//     if (counter < slidLength) {   
+//         console.log(counter);
+//         slidecount(counter);
+//         counter++;
+//     }
+
+//     else{
+//         counter++;
+//     }
+// }
+
+// function currentSlide() {
+//     if (counter >= 0) {
+//         --counter;
+//         slidecount(counter);
+//     }
+//     else{
+//         counter--;
+//     }
+// }
+
+
+// function slidecount(){
+//     for(let i = 0; i < slidLength; i++){
+//         showSlid[i].style.display = "none";
+//         dot[i].classList.remove("active");
+//         dot[i].style.borderColor = "white";
+//     }
+
+//     showSlid[counter].style.display = "block";
+//     dot[counter].style.display = "block";
+// };
+
