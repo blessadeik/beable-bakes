@@ -681,7 +681,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width:80%;
+    width:90%;
 }
 .smallcard{
     padding-top:30px;
@@ -922,7 +922,7 @@ i{
     color: rgb(70, 37, 37);
     font-weight: bold;
     padding-top: 10px;
-    line-height:8vh;
+    line-height:8vh; 
     font-family: 'Itim', cursive;
 }
 
@@ -930,6 +930,10 @@ i{
 @media screen and (max-width:700px){
     .snack-profile{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .bancards{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (max-width:580px){
@@ -958,12 +962,15 @@ i{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap:30px;
-
     }
 }
 
 @media screen and (max-width:300px){
     .snack-profile{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bancards{
+        display:grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
