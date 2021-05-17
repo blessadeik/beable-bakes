@@ -171,63 +171,7 @@ body{
 .active .nav{
     display:block;
 }
-@media screen and (max-width:580px){
-    body{
-        overflow-x: hidden;
-    }
-    .one-header{
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 50vh;
-        display: grid;
-        grid-template-columns:1fr;
-        align-items: center;
-        width: 20%;
-        transform: translateX(100%);
-        transition:transform 0.9s ease-out;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-   
-    .nav a{
-        display:block;
-        padding:10px 35px;
-        visibility: visible;
-    }
-    .burger{
-        right: 0;
-        position:absolute;
-        display:initial;
-        align-self:flex-end;
-        cursor:pointer;
-       
-    }
-    .caption h1{
-        font-size: 30px;
 
-    }
-
-    .caption p{
-        font-size: 8px;
-    }
-    
-    .prev, .next{
-        top: 60%;
-    }
-}
-.nav-active{
-    transform: translateX(0%);
-}
-@keyframes navfade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-        }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
 .toggle .line1{
     transform: rotate(-45deg) translate(-7px, 4px);
 
@@ -355,10 +299,44 @@ body{
     background-size: cover;
 }
 /* snacks and bakes */
+.menu{
+    margin:auto;
+    width:100%;
+
+}
+.menu h1{
+    padding-top:10vh;
+    padding-bottom:10vh;
+    text-align:center;
+    font-weight:bold;
+    font-size: 3em;
+}
 .snacks{
     margin: auto;
     padding-bottom: 1rem;
-    max-width: 100%;
+    max-width: 80%;
+    display:flex;
+}
+.snack-sect{
+    margin: auto;
+    border-radius: 10px 10px;
+    padding:15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width:90%;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.snack-sect-label{
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    margin-left: 0;
+    font-size: 1.5rem;
+    font-weight:bold;
 }
 .peek{
     text-align: center;
@@ -368,30 +346,33 @@ body{
     color: #810000; 
     font-size:1.5rem;
 }
+.snack-snack{
+    width: 100%;
+    margin: auto;
+}
 .snack-profile{
     margin: auto;
     width: 80%;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    padding-top: 1rem;
-}
+    float:right;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 .snack-profile .box{
     position: relative;
-    background: peachpuff;
     margin: 5px;
     box-sizing: border-box;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);    ;
+}
+.snack-profile .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
 }
 .snack-profile .box .imgBox{
     margin: auto;
     overflow: hidden;
     transition: transform 3s;
 }
-.snack-profile .box:hover .imgBox {
+/* .snack-profile .box:hover .imgBox {
     transform: scale(1.08);
-}
+} */
 .snack-profile .box .contents{
     position: absolute;
     top: 6px;
@@ -432,6 +413,36 @@ body{
     text-align: center;
     font-weight: bold;
     padding:5px 5px;
+}
+
+.categories{
+    margin: auto;
+    margin-top:0px;
+    display: block;
+    float: left;
+    width:15%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+    padding: 10px;
+}
+.catcard{
+    justify-content:center;
+    margin-top:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding:25px 0 25px;
+
+}
+.catcard h2{
+    text-align:center;
+    padding: 5px;
+    word-wrap: break-word;
+
+}
+.catcard li{
+    list-style-type:none;    
+    padding-left: 10px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    font-size:1.2em;
 }
 /*  */
 
@@ -725,8 +736,8 @@ hr{
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:20px;
-    width: 60%;
+    gap:10px;
+    width: 80%;
 }
 .feat{
     margin: auto;
@@ -972,7 +983,7 @@ i{
     }
 }
 @media screen and (max-width:800px){
-    .snack-profile{
+    .snack-sect{
         grid-template-columns: repeat(2, 1fr);
     }
     .feat-img{
@@ -1002,10 +1013,74 @@ i{
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 
     }
+    .snacks{
+        display:block;
+    }
+    .categories{
+        width: 80%;
+    }
+    .snack-profile{
+        width:80%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .one-header{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 50vh;
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        width: 20%;
+        transform: translateX(100%);
+        transition:transform 0.9s ease-out;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+   
+    .nav a{
+        display:block;
+        padding:10px 35px;
+        visibility: visible;
+    }
+    .burger{
+        right: 0;
+        position:absolute;
+        display:initial;
+        align-self:flex-end;
+        cursor:pointer;
+       
+    }
+    .caption h1{
+        font-size: 30px;
+
+    }
+
+    .caption p{
+        font-size: 8px;
+    }
+    
+    .prev, .next{
+        top: 60%;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+        }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
-@media screen and (max-width:360px){
-    .snack-profile{
+@media screen and (max-width:380px){
+    .snack-sect{
         grid-template-columns: repeat(1, 1fr);
     }
     .bancards{
