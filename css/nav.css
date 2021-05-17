@@ -18,7 +18,7 @@ body{
 
 .image{
     width:100%;
-    height:200px;
+    height:250px;
 }
 .main{
     background-image: url('../images/wel8.jpg');
@@ -310,6 +310,36 @@ body{
     text-align:center;
     font-weight:bold;
     font-size: 3em;
+}
+.menu-label{
+    padding-top:10vh;
+    padding-bottom: 10vh;
+}
+.menu-label h2{
+    text-align:center;
+    font-size: 2.5em;
+}
+.menu-label p{
+    text-align: center;
+    font-size:2em;
+}
+.menu-form{
+    text-align:center;
+    padding-bottom: 5vh;
+}
+.menu-form input{
+    height:6vh;
+    width:50%;
+    font-size:1.3em;
+    outline:none;
+}
+.menu-form button{
+    color:peachpuff;
+    background-color: #810000;
+    height:6vh;
+    width:10%;
+    border-radius: 10px;
+    font-size: 1.3em;
 }
 .snacks{
     margin: auto;
