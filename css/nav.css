@@ -309,7 +309,7 @@ body{
     padding-bottom:10vh;
     text-align:center;
     font-weight:bold;
-    font-size: 3em;
+    font-size: 2em;
 }
 .menu-label{
     padding-top:10vh;
@@ -317,11 +317,11 @@ body{
 }
 .menu-label h2{
     text-align:center;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 .menu-label p{
     text-align: center;
-    font-size:2em;
+    font-size:1.1em;
 }
 .menu-form{
     text-align:center;
@@ -330,7 +330,7 @@ body{
 .menu-form input{
     height:6vh;
     width:50%;
-    font-size:1.3em;
+    font-size:1em;
     outline:none;
 }
 .menu-form button{
@@ -339,7 +339,7 @@ body{
     height:6vh;
     width:10%;
     border-radius: 10px;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .snacks{
     margin: auto;
@@ -365,7 +365,7 @@ body{
     padding-top:5vh;
     padding-bottom: 5vh;
     margin-left: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight:bold;
 }
 .peek{
@@ -439,7 +439,6 @@ body{
 .snack-name{
     margin: auto;
     color: #810000;
-    font-size: 1.1rem;
     text-align: center;
     font-weight: bold;
     padding:5px 5px;
@@ -461,7 +460,7 @@ body{
     padding:25px 0 25px;
 
 }
-.catcard h2{
+.catcard h3{
     text-align:center;
     padding: 5px;
     word-wrap: break-word;
@@ -472,7 +471,6 @@ body{
     padding-left: 10px;
     padding-bottom: 10px;
     word-wrap: break-word;
-    font-size:1.2em;
 }
 /*  */
 
