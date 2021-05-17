@@ -16,6 +16,10 @@ body{
     width: 100%;
 }
 
+.image{
+    width:100%;
+    height:300px;
+}
 .main{
     background-image: url('../images/wel8.jpg');
     background-position:center;
@@ -377,7 +381,6 @@ body{
     position: relative;
     background: peachpuff;
     margin: 5px;
-    height: 150px;
     box-sizing: border-box;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);    ;
 }
@@ -428,6 +431,7 @@ body{
     font-size: 0.8rem;
     text-align: center;
     font-weight: bold;
+    padding:5px 5px;
 }
 /*  */
 
@@ -681,15 +685,14 @@ hr{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width:90%;
+    width:80%;
 }
 .smallcard{
-    padding-top:30px;
-    padding-bottom:30px;
+    padding: 20% 0 20%;
     box-sizing: border-box;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
-.smallcard h2{
+.smallcard h4{
     text-align: center;
     font-weight: bold;
 }
@@ -702,6 +705,7 @@ hr{
     margin:auto;
     padding-top: 20px;
     padding-bottom:20px;
+    height: fit-content;
 }
 .feat-prod{
     margin: auto;
@@ -723,14 +727,12 @@ hr{
     grid-template-columns: repeat(3, 1fr);
     gap:20px;
     width: 60%;
-    height:300px;
 }
 .feat{
+    margin: auto;
+    overflow: hidden;
+    transition: transform 3s;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.feat img{
-    width: 100%;
-    height: 250px;
 }
 /* Shop */
 /* slides */
@@ -963,14 +965,20 @@ i{
 }
 
 /* @media Queries */
-@media screen and (max-width:700px){
-    .snack-profile{
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (max-width:900px){
     .bancards{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
     }
+}
+@media screen and (max-width:800px){
+    .snack-profile{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feat-img{
+        grid-template-columns: repeat(1, 1fr)
+    }
+   
 }
 @media screen and (max-width:580px){
 
@@ -994,14 +1002,9 @@ i{
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 
     }
-    .snack-profile{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap:30px;
-    }
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:360px){
     .snack-profile{
         grid-template-columns: repeat(1, 1fr);
     }
