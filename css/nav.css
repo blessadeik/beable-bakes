@@ -382,7 +382,7 @@ body{
 }
 .snack-profile{
     margin: auto;
-    width: 80%;
+    width: 75%;
     float:right;
     padding: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
@@ -450,7 +450,7 @@ body{
     margin-top:0px;
     display: block;
     float: left;
-    width:15%;
+    width:20%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
     padding: 10px;
 }
@@ -726,7 +726,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width:80%;
+    width:60%;
 }
 .smallcard{
     padding: 20% 0 20%;
