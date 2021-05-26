@@ -1001,15 +1001,18 @@ i{
 }
 
 /* @media Queries */
-@media screen and (max-width:900px){
+@media screen and (max-width:1024px){
     .bancards{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .snack-sect{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 @media screen and (max-width:800px){
     .snack-sect{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .feat-img{
         grid-template-columns: repeat(1, 1fr)
@@ -1053,6 +1056,9 @@ i{
         margin:auto;
         justify-content:center;
         width:100%;
+    }
+     .snack-sect{
+        grid-template-columns: repeat(2, 1fr);
     }
     .categories{
         display: none;

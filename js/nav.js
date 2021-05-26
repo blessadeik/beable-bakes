@@ -31,7 +31,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll= $(window).scrollTop();
         if(scroll >100){
-            $('.header').css("background", "rgba(0, 0, 0, 0.7)");
+            $('.header').css("background", "rgba(0, 0, 0, 0.9)");
             $('.nav a.search-icon').css("color", "peachpuff");
             $('.act').css("border", "solid 1px peachpuff");
             $('#logo').css("font-size", "1.5rem");
