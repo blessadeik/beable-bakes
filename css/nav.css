@@ -337,15 +337,16 @@ body{
     color:peachpuff;
     background-color: #810000;
     height:6vh;
-    width:10%;
     border-radius: 10px;
     font-size: 1.1em;
+    padding:10px;
 }
 .snacks{
     margin: auto;
     padding-bottom: 1rem;
-    max-width: 80%;
+    max-width: 100%;
     display:flex;
+    flex-wrap: wrap;
 }
 .snack-sect{
     margin: auto;
@@ -382,8 +383,7 @@ body{
 }
 .snack-profile{
     margin: auto;
-    width: 75%;
-    float:right;
+    width: 80%;
     padding: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 .snack-profile .box{
@@ -448,8 +448,7 @@ body{
     margin: auto;
     margin-top:0px;
     display: block;
-    float: left;
-    width:20%;
+    width:10%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
     padding: 10px;
 }
@@ -1017,6 +1016,9 @@ i{
     .feat-img{
         grid-template-columns: repeat(1, 1fr)
     }
+    .about-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
    
 }
 @media screen and (max-width:580px){
@@ -1044,11 +1046,18 @@ i{
     .snacks{
         display:block;
     }
+    .snack-profile{
+        margin:auto;
+        justify-content:center;
+        width:100%;
+    }
     .categories{
-        width: 80%;
+        display: none;
     }
     .snack-profile{
-        width:80%;
+        margin:auto;
+        justify-items: center;
+        width:90%
     }
     body{
         overflow-x: hidden;
@@ -1107,7 +1116,7 @@ i{
     }
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:420px){
     .snack-sect{
         grid-template-columns: repeat(1, 1fr);
     }
