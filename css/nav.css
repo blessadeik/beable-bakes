@@ -513,6 +513,86 @@ body{
     padding-bottom: 10px;
     word-wrap: break-word;
 }
+
+/* team */
+.team{
+    position: relative;
+    height: 20vh;
+    top:10vh;
+    background: linear-gradient(90deg, #ffc7bd, #FFB9C2);
+
+}
+
+.team-title{
+    margin: auto;
+    justify-content: center;
+}
+.team-title h2{
+    padding-top:4%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1rem;
+    color: #ffffff;
+}
+.team-title p{
+    text-align:center;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.our-team{
+    
+    margin-top: 15vh;
+   
+}
+.teams{
+    margin:auto;
+    width:60%;
+    justify-items:center;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+.each-team{
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    background-color:peachpuff;
+    height: 50vh;
+    border-radius: 60% 40% 40% 20%/ 60% 40% 40% 50%;
+    width:50%;
+    margin-bottom:20px;
+
+}
+
+.each-team-2{
+    justify-items:center;
+    box-sizing: border-box;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;    */
+    height: 50vh;
+    width:50%;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+.child-team{
+    padding-top:40%;
+    padding-bottom:30%;
+    text-align: center;
+}
+.child-team h2{
+    text-align: center;    
+    color:peachpuff;
+    font-weight:bold;
+    font-size:1.4em
+}
+.child-team h3{
+    text-align: center;
+    font-weight: bold;
+    font-size:1.2em;
+}
+.child-team p{
+    padding-top:8%;
+}
 /*  */
 
 .res{
@@ -1220,6 +1300,30 @@ i{
     
     .prev, .next{
         top: 60%;
+    }
+    .teams{
+        width:90%
+    }
+    .child-team{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .child-team h2{
+        font-size:1.2em;
+    }
+    .child-team h3{
+        font-size:0.9em;
+    }
+    .child-team p{
+        font-size:0.75em;
+    }
+    .each-team-2{
+        height:30vh;
+        width: 70%;
+    }
+    .each-team{
+        width: 70%;
+        height:30vh;
     }
 }
 .nav-active{
