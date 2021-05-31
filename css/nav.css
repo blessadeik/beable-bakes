@@ -526,9 +526,10 @@ body{
 .team-title{
     margin: auto;
     justify-content: center;
+    padding-top:5%;
+
 }
 .team-title h2{
-    padding-top:4%;
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
@@ -1324,6 +1325,9 @@ i{
     .each-team{
         width: 70%;
         height:30vh;
+    }
+    .team-title{
+        padding-top:10%;
     }
 }
 .nav-active{
