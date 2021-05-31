@@ -1136,6 +1136,12 @@ hr{
     line-height:8vh;
     font-family: 'Itim', cursive;
 }
+
+.shopclick:hover{
+    transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
 i{
     width:25px;
     
@@ -1196,6 +1202,11 @@ i{
     font-family: 'Itim', cursive;
 }
 
+.orderclick:hover{
+     transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
 /* @media Queries */
 @media screen and (max-width:1024px){
     .bancards{
