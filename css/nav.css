@@ -869,7 +869,18 @@ hr{
     margin:auto;
     padding-top: 20px;
     padding-bottom:20px;
-    height: fit-content;
+    height: 50vh;
+    /* background:linear-gradient(90deg, #ffc7bd, #FFB9C2);
+    background-size:cover;
+    background-position: center;
+    overflow:hidden;
+    position:relative; */
+}
+.featured-waves{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    left:0;
 }
 .feat-prod{
     margin: auto;
