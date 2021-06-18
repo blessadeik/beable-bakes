@@ -1,14 +1,28 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const togHeader = document.querySelector('.one-header');
-  
+// side-menu
+    var burger = document.querySelector('.burger');
+    var oneHeader = document.querySelector('.one-header');
 
-    burger.addEventListener('click', () => {
+function navSlide(){
+        if(window.width() < 580){
+            burger.classList.toggle('.burger')
+            $('.one-header').css("visiblity", "visible");
+        }else{
+            $('.one-header').css("visiblity","hidden");
+        }
+}   
+    burger.addEventListener("click", navSlide);
+   
+    // burger.addEventListener('click', (burger) => {
         //Toggle
         // togHeader.classList.toggle('.one-header');
-        if (burger.classList.toggle('toggle')){
-            $('.one-header').css("visibility", "visible");
-        };
+
+
+
+        // if (burger.classList.toggle('toggle')){
+        //     $('.one-header').css("visibility", "visible");
+        // }else{
+        //     $('.one-header').css("visibility", "hidden");
+        // };
 
 
         //Animate links
@@ -21,11 +35,11 @@ const navSlide = () => {
         // });
         // burger animation
     
-    });
-}
+    // });
 
-navSlide();
+// navSlide();
 
+// scroll
 
 $(document).ready(function(){
     $(window).scroll(function(){
