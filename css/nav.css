@@ -1299,25 +1299,25 @@ i{
     }
     .one-header{
         position: absolute;
-        right: 0;
-        top: 0;
+        visibility:hidden;
+        right: 100px;
+        top: 30px;
         height: 50vh;
         display: grid;
         grid-template-columns:1fr;
         align-items: center;
-        width: 20%;
+        width: 100px;
         transform: translateX(100%);
         transition:transform 0.9s ease-out;
         background-color: rgba(0, 0, 0, 0.9);
     }
    
     .nav a{
-        display:block;
+        display:none;
         padding:10px 35px;
-        visibility: visible;
     }
     .burger{
-        right: 0;
+        right: 30px;
         position:absolute;
         display:initial;
         align-self:flex-end;
