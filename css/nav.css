@@ -400,7 +400,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width:90%;
     align-items: center;
     margin-bottom: 20px;
