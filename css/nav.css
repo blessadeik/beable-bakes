@@ -18,7 +18,12 @@ body{
 
 .image{
     width:100%;
-    height:150px;
+    height:200px;
+}
+
+.images{
+    width: 200px;
+    height:200px;
 }
 .dropshadow{
       filter: drop-shadow(2px 4px 8px #585858);
