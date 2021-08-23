@@ -82,3 +82,9 @@ $(document).ready(function(){
 //     dot[counter].style.display = "block";
 // };
 
+
+// popup
+function myFunction(){
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
